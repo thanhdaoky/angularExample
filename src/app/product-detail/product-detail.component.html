@@ -1,0 +1,17 @@
+<p>
+  product-detail works!
+</p>
+<div>
+  <input type="text" class="form-control" [value]="image" (change)="onChange($event)">
+</div>
+<div>
+  <button class="btn btn-primary" (click)="update()">Update</button>
+</div>
+<div>
+  <img [src]="image" class="" alt="">
+  <a [href]="image" target="_blank"></a>
+</div>
+
+<!--ngoặc vuông là bind property-->
+<!-- ngoặc tròn là bind event-->
+<!-- nháy đơn là bind -->
