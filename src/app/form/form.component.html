@@ -1,0 +1,20 @@
+<p>
+  form works!
+</p>
+
+<div>
+  <h3 (click)="toggle()">
+    Heading
+  </h3>
+  <div class="body" [class.show]="active">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit vitae tenetur dignissimos, tempora ducimus saepe at
+    dolor mollitia a soluta?
+  </div>
+</div>
+
+<div class="form-group">
+  <input type="text" class="form-control" [ngClass]="{
+    'is-invalid': !active,
+    'is-valid': active
+  }">
+</div>

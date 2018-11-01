@@ -12,3 +12,13 @@
 <app-personal-card [user]='me'></app-personal-card>
 <app-product-detail time=15></app-product-detail>
 <app-timer [time]='newtime' (ended)='onTimerEnded()'></app-timer>
+<div class="container">
+  <button class="btn btn-danger" (click)="toggle()">
+    Toggle
+  </button>
+  <app-color-block *ngIf="show"></app-color-block>
+  <app-tree *ngFor="let node of tree" [node]="node"></app-tree>
+  <app-form></app-form>
+  <app-template-container></app-template-container>
+  <app-demo-pipe></app-demo-pipe>
+</div>

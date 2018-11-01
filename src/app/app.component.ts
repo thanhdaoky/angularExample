@@ -14,7 +14,30 @@ export class AppComponent {
     address: 'Ha Noi'
   };
   newtime = 20;
+  show = true;
+  tree = [
+    {
+      name: 'level1',
+      children: [
+        {
+          name: 'level 1.1'
+        },
+        {
+          name: 'level 1.2'
+        }
+      ]
+    },
+    {
+      name: 'level 2',
+      children: []
+    }
+  ];
+
   onTimerEnded() {
     this.newtime = 20;
+  }
+
+  toggle() {
+    this.show = !this.show;
   }
 }
